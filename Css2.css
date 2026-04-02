@@ -391,61 +391,6 @@ body {
   height: 80px;
   background: transparent;
 }
-.abilities-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 20px;
-  padding: 15px;
-  border: 2px solid #39ff14;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #39ff14;
-  background: rgba(0, 0, 0, 0.6);
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.abilities-container h3 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #39ff14;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-.ability {
-  margin-bottom: 12px;
-  padding: 12px;
-  transition: 0.2s;
-  font-size: 20px;
-  flex-direction: row;
-  display: flex;
-}
-.ability img {
-  width: 100px;
-  height: auto;
-  margin-right: 10px;
-  object-fit: contain;
-}
-.ability:hover {
-  background: rgba(57, 255, 20, 0.1);
-  transform: scale(1.02);
-}
-.ability-key {
-  font-size: 12px;
-  color: #00ffcc;
-  margin-right: 5px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.ability-title {
-  font-weight: bold;
-  color: #aaffaa;
-  display: block;
-}
-.ability p {
-  font-size: 13px;
-  color: #ccc;
-  margin: 2px 0 0;
-}
 .program-section {
   margin-top: 20px;
 }
@@ -1233,7 +1178,7 @@ body {
 
   .timeline-content { 
     padding: 10px; 
-    width: 2000px;
+    width: 100% !important;
     max-height: 1200px;
     border-radius: 20px;
     border: 1px solid #9EFF00;
@@ -1348,23 +1293,14 @@ body {
     padding: 1px;
   }
 
-  .abilities-container {
-    grid-template-columns: 1fr 1fr;
-    width: 100vh;
-    margin: 20px auto;
-  }
 
-  .ability { 
-    font-size: 20px; }
-  .ability img { 
-    width: 100px; }
 
   .skillcontainer { 
     flex-direction: column; }
   .skillcontainer h3 { 
-    font-size: 30px; }
+    font-size: 2rem !important; }
   .skillcontainer ul { 
-    font-size: 30px; }
+    font-size: 1.2rem !important; }
 
   .footer-content { 
     padding: 10px 15px; }
@@ -1533,15 +1469,9 @@ body {
     margin: 0 !important;
   }
 
-  .abilities-container {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
-    padding: 10px !important;
-    height: auto !important;
-  }
   .program-card{
     text-align: center !important;
+    width: 80% !important;
   }
 }
 
@@ -1588,7 +1518,7 @@ body {
   }
 
   .nav a {
-    font-size: 14px !important; /* Pinaliit para hindi "crowded" tingnan */
+    font-size: 14px !important;  
     padding: 5px !important;
   }
   
@@ -1615,9 +1545,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   flex-direction: row;
   margin-top: -80px;
+  height: 200px !important;
+  
 }
 
     .program-row{
@@ -1640,7 +1572,7 @@ body {
   background: linear-gradient(135deg, #0B3D2E 0%, #111111 60%);
   border: 2px solid #9EFF00;
   border-radius: 15px;
-  height: 370px;
+  height: 270px !important;
   padding: 10px;
   box-shadow: 0 0 15px rgba(158,255,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1652,12 +1584,9 @@ body {
 }
 .cover-card video{
   width: 100%;
-  height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-
-
 .card-content{
   font-size: 1rem;
 }
@@ -1682,7 +1611,6 @@ body {
     width: 3px !important;
     transform: none !important;
   }
-
   .timeline-item, 
   .timeline-item:nth-child(odd), 
   .timeline-item:nth-child(even) {
@@ -1694,7 +1622,6 @@ body {
     display: block !important;
     box-sizing: border-box !important;
   }
-
   .timeline-content {
     width: calc(100% - 10px) !important; 
     max-width: none !important;
@@ -1705,80 +1632,62 @@ body {
     position: relative !important;
     border-radius: 15px !important;
   }
-
   .timeline-album {
     grid-template-columns: 1fr 1fr !important; 
     width: 100% !important;
     gap: 5px !important;
   }
-
   .timeline-album img {
     width: 100% !important;
     height: auto !important;
     margin: 0 !important;
   }
-
-
   .timeline-item {
     animation: none !important; 
     opacity: 1 !important;
   }
-
-
-
   .nameholder h3 {
     font-size: 1.4rem;
   }
-
   .nameholder h4 {
     font-size: 1.1rem;
   }
-
   #smalltext {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
-
   #smalltext h6 {
     margin-left: 0;
     text-align: center;
     font-size: 0.75rem;
   }
-
   .photoholder {
     width: 80%;
     margin: 10px ;
   }
-
   .photoholder img {
     width: 300px;
     height: 500px;
   }
-
   .ability img {
     width: 80px;
   }
-
   .skillcontainer h3
    {
     font-size: 20px;
     text-align: center;
   }
-
   .contact-card {
     padding: 25px;
   }
   .contact-card p{
     font-size:10px;
   }
-
   .submit-btn {
     font-size: 1rem;
     padding: 12px;
   }
-  
-  
 .timeline-title h2 {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
@@ -1787,7 +1696,6 @@ body {
   letter-spacing: 3px;
   text-shadow: 0 0 10px rgba(183, 202, 5, 0.3);
 }
-
 .timeline-title p {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
@@ -1795,8 +1703,6 @@ body {
   opacity: 1;
   letter-spacing: 3px;
 }
-
-
 .skillcontainer {
   display: flex !important;
   flex-direction: column !important; 
@@ -1808,20 +1714,17 @@ body {
   max-height: none !important;
   margin-bottom: 40px !important;
 }
-
 .skillcontainer img {
   width: 120px !important; 
   margin: 0 auto !important; 
   position: static !important;
   display: block !important;
 }
-
 .skillcontainer h3 {
   font-size: 1.8rem !important; 
   margin-bottom: 10px !important;
   line-height: 1.2 !important;
 }
-
 .skillcontainer ul {
   padding: 0 !important;
   margin: 0 !important;
@@ -1829,12 +1732,9 @@ body {
   font-size: 1.1rem !important;
   line-height: 1.6 !important;
 }
-
 .skillcontainer li {
   margin-bottom: 8px !important; 
 }
-
-
 .skillgallery {
   display: flex !important; 
   flex-wrap: wrap !important;
@@ -1844,13 +1744,11 @@ body {
   width: 100% !important;
   padding: 0 !important;
 }
-
 .skillgallery img {
   width: 50px !important; 
   height: auto !important;
 }
 #shade-toggle {
-
     width: 90%; 
     min-height: 45px; 
     font-size: 14px; 
@@ -1866,7 +1764,6 @@ body {
     border-radius: 50px; 
     cursor: pointer;
 }
-
 .picture-toggle-container {
   width: 100%;
 }
@@ -1891,16 +1788,12 @@ body {
   align-items: center;
   text-align: center;
 }
-
 .name, .title, .moviegenre, .musicgenre, .age, .date {
   gap: 1px !important;
   font-size: 12px !important;
   width: 1fr;
   white-space: wrap;
-
 }
-
-
 .age, .date {
   display: flex !important;
   flex-direction: column !important; 
@@ -1908,22 +1801,15 @@ body {
   align-items: center !important;
   gap: 2px !important;
 }
-
-
 .age p, .date p {
   font-size: 11px !important;
   font-weight: bold;
 }
-
-
-
 .short-tagline {
   font-size: 12px !important; 
   margin-top: 15px !important;
   padding-bottom: 20px !important;
 }
-
-
 .profilecontainer * {
   box-sizing: border-box !important;
 }
@@ -1933,7 +1819,6 @@ body {
     border-width: 4px; 
     height: 196PX;
   }
-
 .interests-tags {
   margin: 10px auto; 
   gap: 2px ;
@@ -1941,13 +1826,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .tag {
   padding: 4px 6px; 
   font-size: 10px;   
   margin: 1px;
 }
-  
   .interests-container h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -1955,54 +1838,9 @@ body {
 .videoplaceholder{
   margin:0;
 }
-
-.abilities-container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 10px !important;
-    gap: 30px !important;
-    margin: 0 auto !important;
-    overflow: hidden !important;
-  }
-
-  .ability {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 100% !important;
-    margin-bottom: 25px !important;
-    padding: 10px !important;
-  }
-
-  .ability img {
-    width: 80px !important;
-    height: auto !important;
-    margin: 0 auto 15px auto !important;
-    position: static !important;
-    display: block !important;
-    float: none !important;
-  }
-
-  .ability h3 {
-    font-size: 1.2rem !important;
-    margin: 5px 0 !important;
-    width: 100% !important;
-    color: #9EFF00 !important;
-  }
-
-  .ability p {
-    font-size: 0.85rem !important;
-    line-height: 1.4 !important;
-    width: 95% !important;
-    margin: 0 auto !important;
-    color: #ccc !important;
-  }
-
+.formcontainer{
+  width:1500px !important;
+}
 .contact-card {
     width: 90% !important;
     margin: 0 auto 20px auto !important;
@@ -2013,7 +1851,6 @@ body {
     align-items: center !important;
     text-align: center !important;
   }
-
   .contact-card p {
     font-size: 15px !important;
     word-break: break-all !important;
@@ -2024,7 +1861,6 @@ body {
     line-height: 1.4 !important;
     box-sizing: border-box !important;
   }
-
   .contact-link,
   .social-quick-links a {
     width: 100% !important;
@@ -2033,8 +1869,6 @@ body {
     box-sizing: border-box !important;
   }
   }
-
-
 @media (max-width: 412px) {
 
   html, body {
@@ -2165,7 +1999,9 @@ body {
   }
   .program-card{
     text-align: center;
-    width:100%;
+    width:90%;
+    height: auto;
+    padding: 15px;
   }
   .cover-card{
     text-align: center;
@@ -2381,52 +2217,6 @@ body {
     font-size: 15px;
   }
 
-.abilities-container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 90% !important;
-    max-width: 100% !important;
-    padding: 12px !important;
-    gap: 30px !important;
-    margin: 0 auto !important;
-    overflow: hidden !important;
-  }
-
-  .ability {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 100% !important;
-    margin-bottom: 25px !important;
-    padding: 10px !important;
-  }
-
-  .ability img {
-    width: 80px !important;
-    height: auto !important;
-    margin: 0 auto 15px auto !important;
-    position: static !important;
-    display: block !important;
-    float: none !important;
-  }
-
-  .ability h3 {
-    font-size: 1.2rem !important;
-    margin: 5px 0 !important;
-    width: 100% !important;
-    color: #9EFF00 !important;
-  }
-
-  .ability p {
-    font-size: 0.85rem !important;
-    line-height: 1.4 !important;
-    width: 95% !important;
-    margin: 0 auto !important;
-    color: #ccc !important;
-  }
 
 }
 @media (min-width: 431px) and (max-width: 1024px) {
@@ -2550,4 +2340,247 @@ body {
   }
 }
 
+@media (min-width: 431px) and (max-width: 810px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .main-container,
+  .abilities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .logo-container img {
+    margin-left: 0 !important;
+    width: 120px !important;
+    position: relative !important;
+    left: 0 !important;
+    transform: translateY(-5px);
+  }
+
+  .header-inner {
+    padding: 0 30px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .nav {
+    margin-right: 0 !important;
+    gap: 15px !important;
+  }
+
+  .nav a {
+    font-size: 16px !important;
+    padding: 8px !important;
+  }
+
+  .photoholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: auto;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(47, 226, 12, 0.5);
+  }
+
+  .photoholder img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .videoflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .program-row h3 {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  .cover-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 25px;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .college-timeline {
+    padding: 60px 40px !important;
+    width: 100% !important;
+  }
+
+  .timeline::after {
+    left: 50% !important;
+    width: 4px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .timeline-item {
+    width: 50% !important;
+    padding: 20px !important;
+  }
+
+  .timeline-content {
+    width: 100% !important;
+    padding: 25px !important;
+    border-radius: 20px !important;
+  }
+
+  .timeline-album {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .profilecontainer {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    gap: 20px !important;
+    padding: 40px !important;
+    height: auto !important;
+  }
+
+  .nameholder h3 { font-size: 2.5rem; text-align: center;}
+  .nameholder h4 { font-size: 1.8rem; }
+
+  .name, .title, .moviegenre, .musicgenre, .age, .date {
+    padding: 15px !important;
+    min-height: 60px !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    border-left: 2px solid #9EFF00 !important;
+  }
+
+  .abilities-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 25px !important;
+    width: 100% !important;
+  }
+
+  .ability {
+    flex-direction: row !important;
+    text-align: left !important;
+    padding: 25px !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .ability img {
+    width: 70px !important;
+    margin: 0 !important;
+  }
+
+  .skillcontainer {
+    flex-direction: row !important;
+    padding: 50px !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 660px !important;
+  }
+
+  .skillcontainer img { width: 180px !important; }
+  .skillcontainer h3 { font-size: 2.5rem !important; }
+  .skillcontainer ul{ font-size: 1.4rem !important; text-align: center;
+  list-style: none;}
+
+  .skillgallery {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .skillgallery img { width: 60px !important; }
+
+  #tv-container {
+    width: 80%;
+    max-width: 700px;
+    height: 400px;
+  }
+
+ 
+  #shade-toggle {
+    display: block !important;
+    margin: 20px auto !important; /* "auto" para pilitin siyang pumunta sa gitna */
+    width: 200px !important; /* I-set ang fixed width para hindi siya humaba/tabingi */
+    min-height: 50px !important;
+    position: relative !important;
+    left: 0 !important; /* I-reset kung may "left" property ka sa main CSS */
+    transform: none !important; /* I-reset kung may transform na nagpapatabingi */
+  }
+
+  .program-card {
+    text-align: center !important;
+    padding: 10px !important;
+    width: 80% !important;
+  }
+
+  .picture-toggle-container {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .tag {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .contact-info-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 25px !important;
+  }
+
+  .contact-card {
+    padding: 40px !important;
+    width: 100% !important;
+  }
+
+  .contact-card p {
+    font-size: 14px !important;
+    word-break: normal !important;
+  }
+
+  .submit-btn {
+    width: 50% !important;
+    font-size: 1.2rem;
+  }
+
+  .cover-card {
+    width: 80% !important;
+    max-width: 600px !important;
+    padding: 30px !important;
+    font-size: 36px !important;
+  }
+}
 
